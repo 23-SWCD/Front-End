@@ -51,7 +51,7 @@ JSX 규칙
 1. CamelCase 원칙
 2. return 구문 안 js 사용 시, {}
 ---
-ex. const Temp = 7; 
+const Temp = 7; 
 return {
 ...
   {Temp}
