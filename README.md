@@ -53,13 +53,15 @@ JSX 규칙
 ---
 const Temp = 7; 
 return {
-...
+..
   {Temp}
-...
+..
 }
+
 3. css, style : {{}} + object 사용
 -> <h1 classNam=""style={{clor:"red", ... , fontSize : "3rem"}}> 
 ---
+  
 js 작성
 1. 가정문 : if-else, switch
 #함수를 선언 
