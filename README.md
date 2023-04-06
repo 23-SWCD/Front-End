@@ -1,5 +1,4 @@
-# Front-End
-Frontend
+#1.Intro
 
 MERN STACK
 - node.js(개발환경 총괄), mongoDB(DB), React(프론트), FireBase(유저 서비스), Express(서버) 
@@ -39,12 +38,15 @@ create-react-app <앱 이름>
 리액트 : 클라이언트
 익스프레스 : 서버
 
+#2. Component
+
 컴포넌트 규칙
 1. 컴포넌트의 이름은 반드시 영어 대문자로 시작하여야 한다.
 2. 컴포넌트는 다른 컴포넌트가 사용할 수 있도록 export 해주어야 한다. 
 3. 컴포넌트가 다른 컴포넌트를 사용하려면 import 하여야 한다. 
 4. 컴포넌트가 하나의 태그 에 감싸져야 한다. <> </> 도 가능 
 
+#3. JSX
 JSX 규칙
 1. CamelCase 원칙
 2. return 구문 안 js 사용 시, {}
@@ -57,5 +59,47 @@ return {
 3. css, style : {{}} + object 사용
 ex. <h1 classNam=""style={{clor:"red", ... , fontSize : "3rem"}}> 
 
+js 작성
 1. 가정문 : if-else, switch
-2. 반복문 : for
+#함수를 선언 
+let flag = true;
+function CheckFlag(Flag) {
+  if(flag) {
+    return "참입니다.";
+  } else {
+    return "거짓입니다.";
+  }
+}
+return (
+  ...
+  {CheckFlag(flag)}
+  ...
+)
+
+#return 내에서 사용- 삼항연산자
+{flag ? "참입니다" : "거짓입니다."} 
+
+2. 반복문 : for //map
+-------------------------
+let Arr = {1,2,3};
+
+return (
+  <div>
+    <h1>Hello, React</h1>
+    {Arr.map((element, idx) => {
+      return <p>{element}</p>;
+      })}
+ ) //1,2,3 을 한 줄에 하나씩 출력
+ -------------------------
+ let  Arr = {1,2,3};
+ 
+ return (
+  ... 
+  {Arr.map((a,b) => {
+    return (
+      <div key={b}> //key속성은 변하지 않는 값인index로 설정하는 것을 추천!
+        <p>{a}</p>
+      </div>
+      );
+   })}; 
+
