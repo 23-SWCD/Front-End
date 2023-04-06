@@ -58,7 +58,7 @@ return {
 ...
 }
 3. css, style : {{}} + object 사용
-ex. <h1 classNam=""style={{clor:"red", ... , fontSize : "3rem"}}> 
+-> <h1 classNam=""style={{clor:"red", ... , fontSize : "3rem"}}> 
 ---
 js 작성
 1. 가정문 : if-else, switch
