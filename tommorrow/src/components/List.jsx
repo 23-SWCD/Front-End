@@ -1,21 +1,26 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import  Card  from './Card';
 
 const List = () => (
     <div className='Contents' 
     style={{
-        color : "orange",
+        
         display : "flex",
         position : "fixed",
-        height: "330vh", 
+        height: "65vh", 
         width : "100%",
         top : "30vh",
         justifyContent: "center",
-        background: "purple"}}>
+        alignitems: "center",
+        background: "purple"}}> 
     
-    <h1> [List] 사용자가 DB선택 후 다음페이지로 연결 </h1>
+  
+    <Card/>
     
-    <button onClick={{}}>다음</button>
+    
+    {/* <Button style={{blockSize : "40px"}} onClick={() => {}}>이전</Button>
+    <Button style={{blockSize : "40px"}} onClick={() => {}}>다음</Button> */}
     </div>
 
         

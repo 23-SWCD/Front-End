@@ -1,20 +1,21 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 
 const Header = () => (
     <div className='Header' 
     style={{
-        color : "yellowgreen",
+        
+        background: "yellow", 
         display : "flex",
         position : "fixed",
         height: "10vh", 
         width : "100%",
         top : "0px",
         justifyContent: "center",
-        background: "yellow"}}>
+        alignitems: "center",
+       }}>
         
-       
-        <h2> [ Header ] 로고와 웹명 작성 + CSS  </h2>
+      
+        <h2 style={{ fontSize: 20, color : "Black", top : "25px"}}> [ Header ] TOMMORROW   </h2>
     </div>
 
         

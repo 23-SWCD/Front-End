@@ -1,19 +1,23 @@
 import React from 'react';
+import READ from './READ'
+
 import { Button } from 'react-bootstrap';
 
 const Contents = () => (
     <div className='Contents' 
     style={{
-        color : "green",
+        background:"yellow",
         display : "flex",
         position : "fixed",
-        height: "30vh", 
-        width : "100%",
+        height: "20vh", 
+        width : "50vh",
         top : "10vh",
+        left : "30%",
+        alignItems: 'center',
         justifyContent: "center",
-        background: "gray"}}>
-        
-    <h1>[Contents] 이 웹사이트의 설명과 유저에게 설명서 제공 </h1>
+        }}>
+    
+        <READ/>
     </div>
 
         
