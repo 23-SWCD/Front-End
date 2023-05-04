@@ -13,10 +13,9 @@ const List = () => (
         top : "30vh",
         justifyContent: "center",
         alignitems: "center",
-        background: "purple"}}> 
+        background: "green"}}> 
     
-  
-    <Card/>
+
     
     
     {/* <Button style={{blockSize : "40px"}} onClick={() => {}}>이전</Button>

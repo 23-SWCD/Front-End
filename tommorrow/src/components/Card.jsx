@@ -11,7 +11,7 @@ function DB1() {
         <Card.Text>
           첫 번째 DB입니다. 
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">연습하기</Button>
       </Card.Body>
     </Card>
   );

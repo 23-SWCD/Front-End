@@ -13,9 +13,10 @@ const Header = () => (
         justifyContent: "center",
         alignitems: "center",
        }}>
-        
+    
+    
       
-        <h2 style={{ fontSize: 20, color : "Black", top : "25px"}}> [ Header ] TOMMORROW   </h2>
+        <h2 style={{ fontSize: 20, color : "Black",marginTop : '40px', fontfamily: "font1" }}> [ Header ] logo TOMMORROW   </h2>
     </div>
 
         
