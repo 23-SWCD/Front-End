@@ -5,7 +5,7 @@ const Header = () => (
     <div className='Header' 
     style={{
         
-        background: "Blue", 
+        background: "", 
         display : "flex",
         position : "fixed",
         height: "12vh", 

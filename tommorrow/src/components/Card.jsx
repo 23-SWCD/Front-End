@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "../font/font.css";
 
-function DB1() {
+function DB1(props) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src=""/>
@@ -18,7 +18,7 @@ function DB1() {
   );
 }
 
-function DB2() {
+function DB2(props) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src=""/>
@@ -34,6 +34,21 @@ function DB2() {
   );
 }
 
+function DB3(props) {
+  return (
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src=""/>
+     
+      <Card.Body>
+        <Card.Title >세번째 DB</Card.Title>
+        <Card.Text>
+          세 번째 DB입니다. 
+        </Card.Text>
+        <Button variant="primary">연습하기</Button>
+      </Card.Body>
+    </Card>
+  );
+}
 
 
-export default DB1;
+export {DB1, DB2, DB3};
