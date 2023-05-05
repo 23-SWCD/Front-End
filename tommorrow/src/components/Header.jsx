@@ -1,4 +1,5 @@
 import React from 'react';
+import "../font/font.css";
 
 const Header = () => (
     <div className='Header' 
@@ -11,12 +12,12 @@ const Header = () => (
         width : "100%",
         top : "0px",
         justifyContent: "center",
-        alignitems: "center",
+        alignItems: "center",
        }}>
     
     
       
-        <h2 style={{ fontSize: 20, color : "Black",marginTop : '40px', fontfamily: "font1" }}> [ Header ] logo TOMMORROW   </h2>
+        <h2 style={{ fontSize: 20, color : "Black",marginTop : '40px', fontFamily: "font6" }}> [ Header ] logo TOMMORROW   </h2> 
     </div>
 
         
