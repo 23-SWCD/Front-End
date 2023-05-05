@@ -14,11 +14,7 @@
 예상 구성도
 ![image](https://user-images.githubusercontent.com/60571718/236509378-cdcd0c12-dd7e-44af-a6ee-4aab07ad6e66.png)
 
-예상 결과물- 첫번째 Page
-![image](https://user-images.githubusercontent.com/60571718/236510202-66c23d6f-fae5-4aba-b567-1f157dc77770.png)
-
-예상 결과물 - 두번째 Page
-![image](https://user-images.githubusercontent.com/60571718/236510215-08de1298-bc3d-4154-8f0f-1dbe0d9342a9.png)
-
+예상 결과물
+![image](https://user-images.githubusercontent.com/60571718/236511105-49b7f324-ba34-4fae-9a50-526c889838f5.png)
 
 
