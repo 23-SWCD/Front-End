@@ -5,13 +5,12 @@ import { Button } from 'react-bootstrap';
 const Contents = () => (
     <div className='Contents' 
     style={{
-        background:"blue",
+        background:"", 
         display : "flex",
         position : "fixed",
         height: "20vh", 
-        width : "80vh",
-        top : "10vh", 
-       
+        width : "100%",
+        top : "15vh", 
         alignItems: "center",
         justifyContent: "center",
         }}>

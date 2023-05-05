@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import "../font/font.css";
 
 const Footer = () => (
     <div className='Footer' 
@@ -14,8 +15,8 @@ const Footer = () => (
         alignitems: "center",
         background: "#DDDDDD"}}>
         
-        <h1 style={{ fontSize: 20, color : "white" }}> 
-    [Footer] 제작 날짜 표시, 팀명 소개, 카피라이터 등  </h1>
+        <h1 style={{ fontSize: 20, color : "white", fontFamily:"font1" }}> 
+    [Footer] 2023, Tommorrow, 카피라이터 등  </h1>
     </div>
 
         

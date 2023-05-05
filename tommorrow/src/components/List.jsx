@@ -10,7 +10,7 @@ const List = () => (
         position : "fixed",
         height: "65vh", 
         width : "100%",
-        top : "30vh",
+        top : "40vh",
         justifyContent: "center",
         alignitems: "center",
         background: "green"}}> 
