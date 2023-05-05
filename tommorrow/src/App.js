@@ -5,10 +5,11 @@ import List from './components/List';
 import Footer from './components/Footer';
 
 
+
 function App() {
   return (
     <div>
-      <Header />
+      <Header/>
       <Contents />
       <List />
       <Footer />

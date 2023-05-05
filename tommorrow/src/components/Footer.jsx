@@ -8,14 +8,14 @@ const Footer = () => (
         
         display : "flex",
         position : "fixed",
-        height: "5vh", 
+        height: "3vh", 
         width : "100%",
         bottom : "0px",
         justifyContent: "center",
         alignitems: "center",
         background: "#DDDDDD"}}>
         
-        <h1 style={{ fontSize: 20, color : "white", fontFamily:"font1" }}> 
+        <h1 style={{ fontSize: 15, color : "white", fontFamily:"font2" }}> 
     [Footer] 2023, Tommorrow, 카피라이터 등  </h1>
     </div>
 

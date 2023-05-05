@@ -5,12 +5,12 @@ const Header = () => (
     <div className='Header' 
     style={{
         
-        background: "", 
+        background: "Blue", 
         display : "flex",
         position : "fixed",
-        height: "10vh", 
+        height: "12vh", 
         width : "100%",
-        top : "5px",
+        top : "15px",
         justifyContent: "center",
         alignItems: "center",
        }}>

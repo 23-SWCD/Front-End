@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 const Contents = () => (
     <div className='Contents' 
     style={{
-        background:"", 
+        background:"yellow", 
         display : "flex",
         position : "fixed",
         height: "20vh", 

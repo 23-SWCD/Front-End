@@ -8,16 +8,19 @@ const List = () => (
         
         display : "flex",
         position : "fixed",
-        height: "65vh", 
+        height: "55vh", 
         width : "100%",
         top : "40vh",
         justifyContent: "center",
+        padding : "5px", 
+        margin : "5px",
         alignitems: "center",
         background: "green"}}> 
     
 
     
-    
+    <Card />
+   
     {/* <Button style={{blockSize : "40px"}} onClick={() => {}}>이전</Button>
     <Button style={{blockSize : "40px"}} onClick={() => {}}>다음</Button> */}
     </div>
