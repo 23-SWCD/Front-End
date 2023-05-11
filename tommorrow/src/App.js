@@ -1,20 +1,30 @@
-import React, {Component} from 'react';
-import Header from './components/Header';
-import Contents from './components/Contents';
-import List from './components/List';
-import Footer from './components/Footer';
+import React, { Component } from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/fix/Header";
+import Contents from "./components/main/Contents";
+import List from "./components/main/List";
+import Footer from "./components/fix/Footer";
 
-
-
+import PlayGround from "./components/main2/PlayGround";
 function App() {
   return (
-    <div>
-      <Header/>
-      <Contents />
-      <List />
-      <Footer />
+    <>
+      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Contents />
+              <List />
+            </div>
+          }
+        />
+        <Route path="/Playground" element={<PlayGround />} />
+      </Routes>
 
-    </div>
+      <Footer />
+    </>
   );
 }
 

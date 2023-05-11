@@ -2,7 +2,6 @@
   white-space: pre-line;
 }
 
-
 /*아래 폰트*/
 @font-face {
   font-family: "font1";
@@ -22,7 +21,7 @@
 
 @font-face {
   font-family: "font4";
-  src: url("./font/font4.ttf") ;
+  src: url("./font/font4.ttf");
 }
 
 @font-face {
