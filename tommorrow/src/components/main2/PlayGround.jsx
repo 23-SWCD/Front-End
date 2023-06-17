@@ -39,7 +39,7 @@ function PlayGround() {
           <TableComponent headers={headers} data={data} />
         </TableDiv>
         <Resizable
-          defaultSize={{ width: "100%", height: "60%" }}
+          defaultSize={{ width: "100%", height: "65%" }}
           minHeight={"10%"}
           maxHeight={"90%"}
           enable={{
@@ -55,27 +55,45 @@ function PlayGround() {
           handleStyles={{
             top: {
               width: "100%",
-              height: "20px",
+              height: "8px",
               top: "0px",
-              backgroundColor: "#353736d9",
+              backgroundColor: "#314f5dd9",
               borderTop: "3px solid #0e0e0e",
             },
           }}
         >
-          <PrDiv style={{ marginTop: "20px", height: "calc(100% - 20px)" }}>
-            <SqlQueryEditor />
-            <div
+          <PrDiv
+            style={{
+              marginTop: "8px",
+              height: "calc(100% - 8px)",
+            }}
+          >
+            <div //play run navbar
               style={{
-                width: "50%",
-                height: "100%",
+                width: "100%",
+                height: "55px",
+                backgroundColor: "#314f5dd9",
+              }}
+            ></div>
+            <div //container
+              style={{
+                width: "100%",
+                height: "calc(100% - 55px)",
+                display: "flex",
+                borderLeft: "2px solid grey" /* 왼쪽 선 굵기와 색상 설정 */,
+                borderRight: "2px solid grey" /* 오른쪽 선 굵기와 색상 설정 */,
+                borderBottom: "2px solid grey" /* 아래쪽 선 굵기와 색상 설정 */,
               }}
             >
-              <textarea
+              <SqlQueryEditor />
+              <div //실행창
                 style={{
-                  width: "100%",
+                  width: "50%",
                   height: "100%",
+                  backgroundColor: "#0c2836d9",
+                  zIndex: "1",
                 }}
-              />
+              ></div>
             </div>
           </PrDiv>
         </Resizable>

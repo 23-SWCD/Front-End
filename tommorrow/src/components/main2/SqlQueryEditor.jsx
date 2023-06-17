@@ -19,30 +19,22 @@ function SqlQueryEditor() {
     // 내가 사용하는 모나코 에디터에 테마를 적용해준다.
   }, [monaco]);
   return (
-    <div
-      style={{
-        height: "100%",
-        width: "50%",
-        display: "flex",
-        flex: 1,
+    <Editor
+      width="50%"
+      height="100.1%"
+      defaultLanguage="sql"
+      defaultValue="SELECT "
+      theme="Solarized-dark"
+      options={{
+        fontSize: 14,
+
+        minimap: { enabled: false },
+        scrollbar: {
+          vertical: "auto",
+          horizontal: "auto",
+        },
       }}
-    >
-      <Editor
-        width="100%"
-        height="100%"
-        defaultLanguage="sql"
-        defaultValue="SELECT "
-        theme="Solarized-dark"
-        options={{
-          fontSize: 20,
-          minimap: { enabled: false },
-          scrollbar: {
-            vertical: "auto",
-            horizontal: "auto",
-          },
-        }}
-      />
-    </div>
+    />
   );
 }
 export default SqlQueryEditor;

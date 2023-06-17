@@ -33,9 +33,10 @@ const TableDiv = styled.div`
 //테이블 디자인
 
 const PrDiv = styled.div`
-  background: #11422bd9;
+  background: white;
   display: flex;
-  position: relative;
+
+  flex-direction: column;
   width: 100%;
   justify-content: space-evenly;
   padding: 0 0px 0px 0px;

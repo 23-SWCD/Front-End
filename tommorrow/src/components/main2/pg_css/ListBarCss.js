@@ -6,7 +6,7 @@ const ContainerDiv = styled.div`
 
 const ListBarDiv = styled.div`
   background-color: #3e5249;
-  border-left: 2px solid #323030;
+  border-left: 2px solid grey;
   position: fixed;
   top: 9vh;
   bottom: 0;
