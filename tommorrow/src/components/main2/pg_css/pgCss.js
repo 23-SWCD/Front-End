@@ -1,24 +1,26 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
 const ContainerDiv = styled.div`
   display: flex;
   position: relative;
-  top: 50vh;
+  padding-top: 9vh;
+  width: 80vw;
+  flex-direction: column;
 `;
 
 const TableDiv = styled.div`
-  background: "";
+  background: #11422bd9;
   display: flex;
-  position: relative;
-  height: 39vh;
   width: 100%;
-  padding-top: 9vh;
   align-items: center;
   justify-content: center;
+  overflow: auto;
+
 
   table {
     border-collapse: collapse;
-    border: 2px solid #ccc;
+    border: 2px solid #ccc;v
   }
 
   th,
@@ -34,12 +36,10 @@ const PrDiv = styled.div`
   background: #11422bd9;
   display: flex;
   position: relative;
-  height: 55vh;
   width: 100%;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 0 0px 0px 0px;
   align-items: center;
-  resize: vertical;
   z-index: 50;
 
   button {
@@ -59,12 +59,12 @@ const PrDiv = styled.div`
     }
   }
   textarea {
-    height: 35vh;
-    width: 60vh;
+    height: 90%;
+    width: 40%;
     border-radius: 10px;
     border: 1px solid #c6c6c6;
     padding: 10px;
-    resize: both;
+    resize: none;
     overflow: auto;
     &:active,
     &:focus {

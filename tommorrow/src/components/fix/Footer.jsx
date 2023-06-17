@@ -14,7 +14,7 @@ const Footer = () => (
       justifyContent: "center",
       alignitems: "center",
       background: "#DDDDDD",
-      zIndex: "90",
+      zIndex: "210",
     }}
   >
     <h1 style={{ fontSize: 15, color: "white", fontFamily: "font2" }}>

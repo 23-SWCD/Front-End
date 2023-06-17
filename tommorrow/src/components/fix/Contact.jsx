@@ -10,7 +10,7 @@ function Contact() {
         <img alt="cloud" src={img} />
       </ImageContainer>
       <ContactDiv>
-        <h2> TOMMORROW </h2>
+        <h2> TOMORROW </h2>
       </ContactDiv>
     </>
   );
