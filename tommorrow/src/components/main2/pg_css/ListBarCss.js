@@ -28,18 +28,21 @@ const ListBarDiv = styled.div`
 
   button {
     position: relative;
-    left: -50px;
+    left: -80px;
     top: 10px;
-    width: 40px;
+    width: 60px;
     height: 40px;
     transition: 0.8s ease;
     border: 2px solid #202020;
     border-radius: 40px;
     overflow: hidden;
-  }
-  .openBtn {
-    width: 100%;
-    height: 100%;
+    background-color: #3b4942d9;
+    color: white;
+    &:hover {
+      background-color: black;
+      color: white;
+      border: 1px solid black;
+    }
   }
 `;
 

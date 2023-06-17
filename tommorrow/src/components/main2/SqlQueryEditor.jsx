@@ -21,13 +21,13 @@ function SqlQueryEditor() {
   return (
     <Editor
       width="50%"
-      height="100.1%"
+      height="100.2%"
       defaultLanguage="sql"
-      defaultValue="SELECT "
+      defaultValue="
+      SELECT * FROM "
       theme="Solarized-dark"
       options={{
-        fontSize: 14,
-
+        fontSize: 20,
         minimap: { enabled: false },
         scrollbar: {
           vertical: "auto",

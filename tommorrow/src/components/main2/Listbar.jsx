@@ -50,11 +50,7 @@ const Listbar = ({ width = 250, children, onclick }) => {
       }}
     >
       <button onClick={handleClick}>
-        {isOpen ? (
-          <span>X</span>
-        ) : (
-          <img src={img} alr="contact open button" className="openBtn" />
-        )}
+        {isOpen ? <span>→</span> : <span>WorkList ←</span>}
       </button>
       <div className="content">{children}</div>
     </ListBarDiv>

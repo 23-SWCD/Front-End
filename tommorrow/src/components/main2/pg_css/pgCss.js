@@ -10,17 +10,16 @@ const ContainerDiv = styled.div`
 `;
 
 const TableDiv = styled.div`
-  background: #11422bd9;
+  background: #3b4942d9;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
   overflow: auto;
 
-
   table {
     border-collapse: collapse;
-    border: 2px solid #ccc;v
+    border: 2px solid #ccc;
   }
 
   th,
@@ -81,6 +80,21 @@ const PrDiv = styled.div`
     }
   }
 `;
+const PrNavDiv = styled.div`
+  width: 100%;
+  height: 55px;
+  background-color: #314f5dd9;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+  Button {
+    color: white;
+  }
+`;
+
 //연습하는 컴포넌트
 
-export { PrDiv, TableDiv, ContainerDiv };
+export { PrDiv, TableDiv, ContainerDiv, PrNavDiv };
