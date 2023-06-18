@@ -5,16 +5,17 @@ import SqlQueryEditor from "./SqlQueryEditor";
 import Listbar from "./Listbar";
 import { Resizable } from "re-resizable";
 import PrNav from "./PrNav";
-import { Icon, Button, NonIdealState } from "@blueprintjs/core";
+import QueryResult from "./QueryResult";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
+
 const headers = ["이름", "나이", "이메일"];
 const data = [
-  ["정진혁(명예소방관)", "25", "jjh@naver.com"],
-  ["구민회(청소부)", "25", "kmh@example.com"],
-  ["김동연(구두약)", "25", "kdy@example.com"],
-  ["정회창(상무이사)", "25", "jhc@example.com"],
-  ["김민기(쥐약)", "25", "kmk@example.com"],
+  ["정진혁", "25", "jjh@naver.com"],
+  ["구민회", "25", "kmh@example.com"],
+  ["김동연", "25", "kdy@example.com"],
+  ["정회창", "25", "jhc@example.com"],
+  ["김민기", "25", "kmk@example.com"],
 ];
 
 function PlayGround() {
@@ -83,22 +84,7 @@ function PlayGround() {
               }}
             >
               <SqlQueryEditor />
-              <div //실행창
-                style={{
-                  width: "50%",
-                  height: "100%",
-                  backgroundColor: "#1c1d1ddb",
-                  zIndex: "1",
-                  disply: "flex",
-                }}
-              >
-                <NonIdealState
-                  icon="database"
-                  title="No Results"
-                  description="Click on the Play Button to execute your query"
-                  action={<Button icon="play" text="Play" />}
-                />
-              </div>
+              <QueryResult />
             </div>
           </PrDiv>
         </Resizable>

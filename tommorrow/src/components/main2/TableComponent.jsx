@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+function TableComponent({}) {
+  const [data, setData] = useState(null);
 
-function TableComponent({ headers, data }) {
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        "http://3.37.241.210:8080/member/members"
+      );
+      setData(response.data);
+    } catch (error) {
+      console.log("Error fetching data:", error);
+    }
+  };
+
   return (
-    <table>
+    <div>
+      {data ? (
+        <ul>
+          {data.map((item) => (
+            <li key={item.id}>{item.username}</li>
+          ))}
+        </ul>
+      ) : (
+        <p>Loading data...</p>
+      )}
+    </div>
+    /*<table>
       <thead>
         <tr>
           {headers.map((header) => (
@@ -19,7 +47,7 @@ function TableComponent({ headers, data }) {
           </tr>
         ))}
       </tbody>
-    </table>
+    </table> */
   );
 }
 

@@ -10,7 +10,7 @@ const ContainerDiv = styled.div`
 `;
 
 const TableDiv = styled.div`
-  background: #3b4942d9;
+  background: #e1e5ec;
   display: flex;
   width: 100%;
   align-items: center;
@@ -95,6 +95,14 @@ const PrNavDiv = styled.div`
   }
 `;
 
+const QueryResultDiv = styled.div`
+  width: 50%;
+  height: 100%;
+  background-color: #1c1d1ddb;
+  z-index: 1;
+  display: flex;
+`;
+
 //연습하는 컴포넌트
 
-export { PrDiv, TableDiv, ContainerDiv, PrNavDiv };
+export { PrDiv, TableDiv, ContainerDiv, PrNavDiv, QueryResultDiv };
