@@ -1,9 +1,11 @@
 import React from "react";
 import "../../font/font.css";
-import img from "../../img/cloud.png";
+import img from "../../img/tree.png";
 import SideBar from "./SideBar";
 import Contact from "./Contact";
 import HeaderDiv from "./fixCss/headerCss";
+import Login from "../User/Login";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,6 +13,7 @@ const Header = () => {
       <SideBar width={300}>
         <Contact />
       </SideBar>
+
       <div
         style={{
           fontFamily: "font6",
@@ -18,19 +21,28 @@ const Header = () => {
           height: "70%",
         }}
       >
-        <img alt="cloud" src={img} />
-        <h2
+        <img style={{ padding: ".4rem .80rem" }} alt="cloud" src={img} />
+
+        <Link
+          to="/"
           style={{
+            color: "black",
             fontSize: 20,
-            color: "Black",
             marginTop: "2vh",
+            fontFamily: "font6",
             fontFamily: "font6",
           }}
         >
-          {" "}
-          TOMORROW{" "}
-        </h2>
+          TOMORROW
+        </Link>
       </div>
+      <div
+        style={{
+          position: "relative",
+          left: "18.75rem",
+          display: "flex",
+        }}
+      ></div>
     </HeaderDiv>
   );
 };

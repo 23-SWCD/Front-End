@@ -1,36 +1,14 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-function TableComponent({}) {
-  const [data, setData] = useState(null);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(
-        "http://3.37.241.210:8080/member/members"
-      );
-      setData(response.data);
-    } catch (error) {
-      console.log("Error fetching data:", error);
-    }
+function TableComponent({ headers, data }) {
+  const tableStyle = {
+    fontFamily: "Arial, sans-serif",
+    fontFamily: "Open Sans",
+    fontWeight: "bold",
   };
 
   return (
-    <div>
-      {data ? (
-        <ul>
-          {data.map((item) => (
-            <li key={item.id}>{item.username}</li>
-          ))}
-        </ul>
-      ) : (
-        <p>Loading data...</p>
-      )}
-    </div>
-    /*<table>
+    <table style={tableStyle}>
       <thead>
         <tr>
           {headers.map((header) => (
@@ -47,7 +25,7 @@ function TableComponent({}) {
           </tr>
         ))}
       </tbody>
-    </table> */
+    </table>
   );
 }
 

@@ -19,12 +19,12 @@ const TableDiv = styled.div`
 
   table {
     border-collapse: collapse;
-    border: 2px solid #ccc;
+    border: 3px solid #ccc;
   }
 
   th,
   td {
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     padding: 8px;
     text-align: left;
   }

@@ -18,7 +18,7 @@ const ListBarDiv = styled.div`
   box-sizing: content-box;
 
   .content {
-    padding: 40px 40px 0 20px;
+    padding: 40px 40px 0 0;
     position: relative;
     width: 100%;
     display: flex;

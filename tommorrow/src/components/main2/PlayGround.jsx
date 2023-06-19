@@ -8,14 +8,24 @@ import PrNav from "./PrNav";
 import QueryResult from "./QueryResult";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
-
-const headers = ["이름", "나이", "이메일"];
+import DefaultExample from "./QuestionList";
+import { Icon } from "@blueprintjs/core";
+import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+import "@blueprintjs/core/lib/css/blueprint.css";
+const headers = [
+  "id",
+  "student_age",
+  "gender",
+  "student_major",
+  "student_name",
+  "student_phone",
+];
 const data = [
-  ["정진혁", "25", "jjh@naver.com"],
-  ["구민회", "25", "kmh@example.com"],
-  ["김동연", "25", "kdy@example.com"],
-  ["정회창", "25", "jhc@example.com"],
-  ["김민기", "25", "kmk@example.com"],
+  [1001, 20, "남성", "컴퓨터공학과", "홍길동", "010-1234-1234"],
+  [1002, 20, "여성", "경영학과", "김영희", "010-4321-7258"],
+  [1003, 24, "여성", "아트앤디자인학과", "박미선", "010-3323-5456"],
+  [1004, 22, "남성", "영어영문학과", "김철소", "010-8593-4678"],
+  [1005, 24, "남성", "국어국문학과", "김윤하", "010-4549-2538"],
 ];
 
 function PlayGround() {
@@ -26,7 +36,15 @@ function PlayGround() {
 
   return (
     <>
-      <Listbar onclick={toggleSidebar}>1</Listbar>
+      <Listbar onclick={toggleSidebar}>
+        <div style={{ marginBottom: "100px" }}>
+          <Icon icon="book" color="white" iconSize="70px" />
+        </div>
+        <DefaultExample />
+        <div style={{ color: "white", marginTop: "50px" }}>
+          <strong>1</strong> &nbsp;2&nbsp; 3
+        </div>
+      </Listbar>
       <div
         id="containerDiv"
         style={{
