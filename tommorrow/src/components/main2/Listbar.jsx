@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { ListBarDiv } from "./pg_css/ListBarCss";
-import DefaultExample from "./QuestionList";
 
 const Listbar = ({ width = 250, children, onclick }) => {
   const [isOpen, setOpen] = useState(false);
